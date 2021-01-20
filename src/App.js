@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react"
 import React from "react"
 import Filter from "./components/Filter";
 import Products from "./components/Products";
@@ -26,7 +25,6 @@ class App extends React.Component {
         ((a.price < b.price)? 1:-1):
         ((a._id > b._id)? 1:-1)
       ))
-
     }))
   }
 
