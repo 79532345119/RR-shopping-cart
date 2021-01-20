@@ -122,3 +122,13 @@ footer {
 .button.primary {
   background-color: #f0c040;
 }
+/* Filter component */
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter div {
+  flex: 1;
+}
