@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react"
 import React from "react"
 import Filter from "./components/Filter";
 import Products from "./components/Products";
