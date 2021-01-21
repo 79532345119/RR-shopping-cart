@@ -7,3 +7,6 @@
 # 5. Create Cart component
 # 6. Add animation (using npm i react-reveal)
 # 7. Create modal (using npm i react-modal)
+# 8. Create backend 
+    a. npm i nodemon
+    b. npm i express body-parser mongoose shortid
