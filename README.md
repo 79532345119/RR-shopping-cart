@@ -10,3 +10,9 @@
 # 8. Create backend 
     a. npm i nodemon
     b. npm i express body-parser mongoose shortid
+    c. create server.js
+    d. install http://mongodb.com/download-center
+    e. install https://www.postman.com/downloads/
+    f. run postman and post goods from data.json one by one
+# 9. add Redux
+    a. npm i redux react-redux redux-thunk
