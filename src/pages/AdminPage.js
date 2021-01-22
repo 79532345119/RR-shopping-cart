@@ -1,9 +1,10 @@
 import React from 'react'
+import Orders from '../components/Orders'
 
 export function AdminPage() {
     return (
         <div>
-            ADMIN PAGE will be here
+            <Orders />
         </div>
     )
 }
