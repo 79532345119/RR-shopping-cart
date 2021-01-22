@@ -16,3 +16,6 @@
     f. run postman and post goods from data.json one by one
 # 9. add Redux
     a. npm i redux react-redux redux-thunk
+# 10. create order
+    a. create api at server.js
+    b. 
