@@ -1,4 +1,4 @@
-import { CREATE_ORDER, CLEAR_ORDER, CLEAR_CART, FETCH_ORDERS } from "../types"
+import { CREATE_ORDER, CLEAR_ORDER, CLEAR_CART, FETCH_ORDERS, DELETE_ORDER, MARK_AS_CHECKED, MARK_AS_SENT } from "../types"
 
 export const createOrder = (order) => dispatch => {
     fetch("api/orders", {
@@ -27,4 +27,18 @@ export const fetchOrders = () => async dispatch => {
         type: FETCH_ORDERS,
         payload: data
     })
+}
+
+export const deleteOrder = (id) => async dispatch => {
+    const res = await fetch("/api/orders/"+id, {method:"DELETE"})
+    const data = await res.json()
+    dispatch({type: DELETE_ORDER})   
+}
+
+export const markOrderAsChecked = (order) => async dispatch => {
+    const res = await fetch ("api/orders/"+order._id, 
+        {
+            method:"UPDATE",
+            payload: order.isChecked    
+        })
 }
