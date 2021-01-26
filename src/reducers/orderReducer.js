@@ -1,4 +1,4 @@
-import { CLEAR_ORDER, CREATE_ORDER, DELETE_ORDER, FETCH_ORDERS, MARK_AS_CHECKED, MARK_AS_SENT } from "../types"
+import { CLEAR_ORDER, CREATE_ORDER, DELETE_ORDER, FETCH_ORDERS } from "../types"
 
 export const orderReducer = (state = {}, action) => {
     switch (action.type) {

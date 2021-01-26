@@ -11,5 +11,3 @@ export const CLEAR_CART = "CLEAR_CART"
 
 export const FETCH_ORDERS = "FETCH_ORDERS"
 export const DELETE_ORDER = "DELETE_ORDER"
-export const MARK_AS_CHECKED = "MARK_AS_CHECKED"
-export const MARK_AS_SENT = "MARK_AS_SENT"

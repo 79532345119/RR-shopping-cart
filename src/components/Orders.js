@@ -24,8 +24,6 @@ class Orders extends Component {
                   <th>EMAIL</th>
                   <th>ADDRESS</th>
                   <th>ITEMS</th>
-                  <th>CHECKED</th>
-                  <th>SENT</th>
                 </tr>
               </thead>
               <tbody>
@@ -44,8 +42,6 @@ class Orders extends Component {
                         </div>
                       ))}
                     </td>
-                    <td><input type="checkbox" value={order.isChecked}/></td>
-                    <td><input type="checkbox" value={order.isSent}/></td>
                     <td><i className="material-icons" onClick={e=>{this.props.deleteOrder(order._id); this.props.fetchOrders()}} >delete</i></td>
                   </tr>
                 ))}
