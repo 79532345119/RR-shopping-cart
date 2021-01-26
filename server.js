@@ -46,6 +46,8 @@ const Order = mongoose.model("order", new mongoose.Schema({
     name: String,
     address: String,
     total: Number,
+    isChecked: Boolean,
+    isSent: Boolean,
     cartItems: [{
         _id: String,
         title: String,
@@ -79,7 +81,10 @@ app.get("/api/orders", async (req, res) => {
 app.delete("/api/orders/:id", async (req, res) => {
     const deletedOrder = await Order.findByIdAndDelete(req.params.id)
     res.send(deletedOrder)
-} )
+})
+
+
+
 
 const port = process.env.PORT || 5000
 app.listen(port, () => console.log("serve at http://localhost:5000"))

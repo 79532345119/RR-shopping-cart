@@ -31,6 +31,8 @@ class Cart extends Component {
           address: this.state.address,
           cartItems: this.props.cartItems,
           total: this.props.cartItems.reduce((a, c) => a + c.price * c.count, 0),
+          isChecked: false,
+          isSent: false,
         };
         this.props.createOrder(order);
       }

@@ -18,4 +18,8 @@
     a. npm i redux react-redux redux-thunk
 # 10. create order
     a. create api at server.js
-    b. 
+# 11. create admin section
+    a. add get and delete options for order at server.js
+    b. add FETCH_ORDERS at types.js
+    c. npm install react-router-dom
+    d. Add new page 
